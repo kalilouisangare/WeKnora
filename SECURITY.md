@@ -1,46 +1,47 @@
-# Security Policy
+# Politique de sécurité
 
-## Reporting a Vulnerability
+## Signaler une vulnérabilité
 
-The WeKnora team takes security vulnerabilities seriously.  
-We appreciate your efforts to responsibly disclose any security issues you discover.
+L'équipe WeKnora prend très au sérieux les vulnérabilités de sécurité.
+Nous apprécions vos efforts pour signaler de manière responsable tout problème de sécurité que vous découvrez.
 
-⚠️ **Please do NOT report security vulnerabilities through public GitHub issues.**
+⚠️ **Veuillez NE PAS signaler les vulnérabilités de sécurité via des tickets GitHub publics.**
 
-### Preferred reporting method
+### Méthode de signalement recommandée
 
-We recommend reporting security vulnerabilities using GitHub’s private vulnerability reporting feature:
+Nous vous recommandons de signaler les vulnérabilités de sécurité à l'aide de la fonctionnalité privée de signalement des vulnérabilités de GitHub :
 
-1. Go to the **Security** tab of this repository
-2. Click **“Report a vulnerability”**
-3. Fill in the details and submit the report
+1. Rendez-vous dans l’onglet **Sécurité** de ce dépôt
+2. Cliquez sur **« Signaler une vulnérabilité »**
+3. Remplissez les informations demandées et envoyez le rapport
 
-This allows us to discuss, investigate, and fix the issue privately.
+Cela nous permet de discuter, d’enquêter et de corriger le problème en toute confidentialité.
 
-### Alternative contact
+### Autre moyen de contact
 
-If you are unable to use GitHub’s Security Advisory feature, you may contact the maintainers through the repository owners.
+Si vous ne parvenez pas à utiliser la fonctionnalité « Avis de sécurité » de GitHub, vous pouvez contacter les responsables via les propriétaires du dépôt.
 
-> Please avoid sharing sensitive information publicly.
+> Veuillez éviter de partager des informations sensibles publiquement.
 
-### What to include in your report
+### Éléments à inclure dans votre rapport
 
-To help us understand and resolve the issue quickly, please include:
+Afin de nous aider à comprendre et à résoudre rapidement le problème, veuillez inclure :
 
-- A clear description of the vulnerability
-- Steps to reproduce (proof-of-concept if available)
-- The affected version(s)
-- Potential impact and severity
-- Any suggested mitigations or fixes (if known)
+- Une description claire de la vulnérabilité
+- Les étapes permettant de reproduire le problème (preuve de concept si disponible)
+- La ou les versions concernées
+- L’impact potentiel et la gravité
+- Toute suggestion de mesures d’atténuation ou de correctifs (si connus)
 
-### Response timeline
+### Délais de réponse
 
-We aim to:
-- Acknowledge receipt of your report within **48 hours**
-- Provide a status update as the investigation progresses
+Nous nous efforçons de :
+- Accuser réception de votre rapport dans les **48 heures**
+- Vous tenir informé de l’avancement de l’enquête
 
-### Coordinated disclosure
+### Divulgation coordonnée
 
-We kindly ask reporters to follow responsible disclosure practices and allow us reasonable time to address the issue before any public disclosure.
+Nous demandons aux auteurs des rapports de respecter les pratiques de divulgation responsable et de nous accorder un délai raisonnable pour remédier au problème avant toute divulgation publique.
 
-Thank you for helping keep **WeKnora** and its users secure.
+
+Merci de contribuer à la sécurité de **WeKnora** et de ses utilisateurs.
