@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+transformers
+onnxruntime
+numpy
+pydantic
+sentencepiece
+protobuf

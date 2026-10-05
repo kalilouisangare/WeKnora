@@ -34,13 +34,13 @@ ENV VITE_IS_DOCKER=true
 # Vite production builds of this SPA routinely exceed Node's default heap.
 ENV NODE_OPTIONS="--max-old-space-size=${NODE_MAX_OLD_SPACE_SIZE}"
 
-# The lockfile pins the remote SheetJS archive and its integrity hash.
 COPY package.json package-lock.json ./
-RUN if [ -n "$NPM_REGISTRY" ]; then \
-      npm ci --registry="$NPM_REGISTRY"; \
-    else \
-      npm ci; \
-    fi
+
+# 🎯 Utiliser un miroir npm rapide + timeouts augmentés
+RUN npm config set registry https://registry.npmmirror.com && \
+    npm config set fetch-timeout 600000 && \
+    npm config set fetch-retries 10 && \
+    npm ci
 
 COPY . .
 # After npm ci so a new commit hash does not bust the dependency layer.

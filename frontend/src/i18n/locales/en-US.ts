@@ -4776,6 +4776,7 @@ export default {
     ruRU: 'Русский',
     koKR: '한국어',
     jaJP: '日本語',
+    frFR: 'Français',
     selectLanguage: 'Select Language',
     language: 'Language',
     languageDescription: 'Select interface display language',

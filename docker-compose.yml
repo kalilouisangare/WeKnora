@@ -24,7 +24,8 @@ services:
       # For remote deployment, set this to the remote App's service port.
       - APP_PORT=${APP_BACKEND_PORT:-8080}
       - APP_SCHEME=${APP_SCHEME:-http}
-    # NOTE: If using a remote App backend, comment out or remove the depends_on
+      - SSRF_WHITELIST_EXTRA=searxng,qdrant,milvus,weaviate,doris-fe,doris-be,minio,host.docker.internal,192.168.1.28,reranker,172.16.0.0/12    # NOTE: If using a remote App backend, comment out or remove the depends_on
+      - NPM_REGISTRY=https://registry.npmmirror.com
     # block below and set APP_HOST/APP_BACKEND_PORT/APP_SCHEME in your .env file.
     depends_on:
       app:
@@ -1024,6 +1025,17 @@ services:
     restart: unless-stopped
     profiles:
       - full
+  
+  reranker:
+      build: ./reranker
+      container_name: WeKnora-reranker
+      ports:
+        - "8001:8000"
+      volumes:
+        - /home/kalilouisangare/HOME/Model_local/Reranker:/models/reranker:ro
+      networks:
+        - WeKnora-network
+      restart: unless-stopped
 
 networks:
   WeKnora-network:

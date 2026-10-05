@@ -439,7 +439,8 @@ const languageOptions = [
   { value: 'en-US', label: 'English', shortLabel: 'EN', flag: '🇺🇸' },
   { value: 'ru-RU', label: 'Русский', shortLabel: 'RU', flag: '🇷🇺' },
   { value: 'ko-KR', label: '한국어', shortLabel: '한국어', flag: '🇰🇷' },
-  { value: 'ja-JP', label: '日本語', shortLabel: '日本語', flag: '🇯🇵' }
+  { value: 'ja-JP', label: '日本語', shortLabel: '日本語', flag: '🇯🇵' },
+  { value: 'fr-FR', label: 'Français', shortLabel: 'FR', flag: '🇫🇷' }
 ]
 
 const currentLanguage = computed(() => locale.value)
